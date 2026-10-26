@@ -1,0 +1,27 @@
+{
+  "mcpServers": {
+    "algobharat-telecom-airtime-ai": {
+      "command": "cargo",
+      "args": [
+        "run",
+        "--release",
+        "--quiet"
+      ],
+      "env": {
+        "RUST_LOG": "info",
+        "HACKATHON_TRACK": "Algorand",
+        "PROJECT_TICKER": "ABTEL"
+      },
+      "tools": [
+        {
+          "name": "verify_abtel_invariants",
+          "description": "Verifies deterministic invariants for AlgoBharat Telecom Airtime AI on Algorand."
+        },
+        {
+          "name": "execute_abtel_action",
+          "description": "Executes authenticated Telecom state transition."
+        }
+      ]
+    }
+  }
+}
